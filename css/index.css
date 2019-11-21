@@ -1,0 +1,229 @@
+@charset="uft-8";
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:"Arial";
+    font-size:14px;
+    font-weight:300;
+    color:#333333;
+}
+a:link, a:visited{
+    color: #333333;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+
+#wrapper{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+}
+
+.header{
+    width:1200px;
+    height: 100px;
+/*    border: 1px solid red;*/
+}
+.header_left{
+    width: 200px;
+    height: 100px;
+    float: left;
+    padding-top: 50px;
+/*    border: 1px solid red;*/
+}
+.header_left img{
+    width:200px;
+    height: 40px;
+}
+.header_right{
+    width:1000px;
+    height: 100px;
+    float: right;
+    padding-top: 40px;
+   
+}
+.header_a{
+    width:800px;
+    height: auto;
+    float: right;
+}
+.header_a > a{
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.header_a > a:hover{
+    color:#555;
+    background:#eee;
+}
+.mega{
+    clear: both;
+    width:1200px;
+    height: auto;
+    float: right;
+    position:relative;
+/*    border: 1px solid red;*/
+}
+.mega_box{
+    width: 1200px;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    right:0;
+    z-index: 9;
+    transition:0.5s;
+    overflow: hidden;
+     background: #eee;
+    float: right;
+}
+.mega ul{
+    width:800px;
+    height: 100%;
+    text-align: center;
+    float: right;
+}
+
+.mega ul li{
+    display:inline-block;
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+.mega ul li a{
+    display: block;
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+}
+.mega ul li a:hover{
+    background: #bbb;
+    color:#fff;
+}
+
+.header_a:hover .mega_box{
+    height: 200px;
+}
+
+.slide{
+    width: 1200px;
+    height: 300px;
+    position:relative;
+    overflow: hidden;
+}
+
+.slidebox{
+    width:1200px;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.5s;
+}
+
+.slidebox img{
+    width:1200px;
+    height: 300px;
+    display:block;
+}
+.containerbox{
+    width: 1200px;
+    height: 200px;
+    margin-top: 20px;
+/*    border: 1px solid red;*/
+}
+.container{
+    width:400px;
+    height: 200px;
+    float:left;
+}
+.box1 span, .box2 span{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border-radius:10px 10px 0 0 ;
+    background: #eee;
+    cursor: pointer;
+}
+.box1 p{
+    margin-top: 20px;
+}
+.openmodal{
+    cursor: pointer;
+/*    position:relative;*/
+}
+.box2 .gall{
+    width:33.3%;
+    height: 150px;
+    float: left;
+    padding:0 10px 0 0;
+}
+.gall img{
+    width:100%;
+    height: 100%;
+}
+.box3 img{
+    width:100%;
+    height: 100%;
+}
+.closemodal{
+    width:300px;
+    height: 300px;
+    background:#eee;
+    position:fixed;
+    top:300px;
+    left: 100px;
+    display: none;
+}
+.closemodal span{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    padding: 20px;
+}
+.closebtn{
+    position:absolute;
+    top: 90%;
+    left: 80%;
+    cursor: pointer;
+}
+.foot{
+    clear: both;
+    width:1200px;
+    height: 100px;
+    margin-top: 20px;
+}
+.last{
+    width:200px;
+    height: 100px;
+    float: left;
+}
+.last img{
+    width: 100%;
+    height: 100%;
+}
+.last_center{
+    width:800px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    background: #eee;
+}
+.last_center span{
+    font-size: 20px;
+    font-weight: 900;
+}
